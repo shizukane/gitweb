@@ -18,7 +18,7 @@ For any information pull request is welcome
 * CSS
 ## Contact Information
   * 0794812973
-  *  Email:halimaadan92@gmail.com
+  *  Email:drizydarolle@gmail.com
 ## License
 licensed under the [MIT License](license)
  copyright(c) 2020 Gitsearch
