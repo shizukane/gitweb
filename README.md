@@ -8,7 +8,7 @@ Gitsearch is a website where users enter a GitHub username into a form, submit i
  ## project link
  https://shizukane.github.io/gitweb/
  ## Author and acknowledgement
-By Habiba Hassan
+By Shizukane Darolle
 ## Code Beat
 [![codebeat badge](https://codebeat.co/badges/ae83f2be-c6df-481d-8fa4-e84e3c790cbf)](https://codebeat.co/projects/github-com-habibahassan-gitsearch-master)
 ## contributing
