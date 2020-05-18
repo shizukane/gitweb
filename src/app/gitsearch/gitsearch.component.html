@@ -1,0 +1,135 @@
+<div class="search">
+    <div class="container-fluid">
+      <img src="https://bit.ly/36cBAK2" height="150px" width="150px">
+      <form action="" class="enter">
+        <div class="form-group">
+          <input type="text" placeholder="enter username here...." class="form-control" [(ngModel)]="username"
+            name="username" (keyup.enter)="findProfile()">
+  
+        </div>
+      </form>
+      <div *ngIf="user">
+        <div class="row">
+          <div class="col-sm-3">
+            <img class="img" src="{{user.avatar_url}}">
+          </div>
+          <br>
+          <br>
+          <div class="col-sm-3">
+            <ul class="list-group">
+              <li class="list-group-item">{{user.login}}</li>
+              <li class="list-group-item" *ngIf="user.bio">{{user.name}}</li>
+              <li class="list-group-item" *ngIf="user.blog">{{user.blog}}</li>
+  
+              <li class="list-group-item" *ngIf="user.email">{{user.email}}</li>
+              <li class="list-group-item">
+  
+            </ul>
+          </div>
+  
+          <div class="col-sm-6">
+            <div>
+              <hr>
+              <p>
+                <span class="label" class="btn btn-success"> {{user.followers}} Followers</span>&nbsp;
+  
+                <span class="label" class="btn btn-info"> {{user.following}} Following </span>&nbsp;
+  
+                <span class="label" class="btn btn-secondary"> {{user.public_gists}} gists</span>&nbsp;
+  
+                <span class="label" class="btn btn-primary"> {{user.public_repos}} Repositories</span>
+  
+  
+              </p>
+              <hr>
+              <hr>
+  
+              <p>
+                <a href="{{user.html_url}}" target="_blank" class=" view  btn btn-warning"> check profile on github</a>
+  
+              </p>
+              <hr>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 style="color:white; text-align: center;">Git Repositories</h1>
+    <div appRepohighlight class="card container" *ngFor="let repos of repos" style="width: 70%; border-radius:20px;">
+  
+      <a href="{{repos.html_url}}" class="text-align-center" target="_blank" class="view btn btn-outline-success">View
+        project on github</a>
+      <br>
+      <br>
+  
+      <div class=" text-center">
+        <h2 id="rname">{{repos.name | myCustomPipe :'true' }}</h2>
+      </div>
+  
+  
+      <p id="dec">
+        Project Description :: {{repos.description| myCustomPipe :'false'}}
+      </p>
+      <span class="badge badge-secondary mr-1"> Created On:{{repos.created_at | date}}</span>
+  
+      <div>
+      </div>
+  
+    </div>
+  
+    <!-- <div class="search">
+    <div class="container-fluid">
+      
+  
+      <app-git-form (issearch)="searchGit($event)" (isrepossearch)="repoSearch($event)"></app-git-form>
+      <div class="card text-white bg-transparent mb-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="colhttp://localhost:4200/-md-6">
+              <img class="avatar image" src="{{user.avatar_url}}" alt="User's avatar">
+              <a class="btn btn-outline-danger btn-sm" ><h5 class="card-title" style="color:black"><b> Github User Name: {{gitUsers.login}}</b></h5></a>
+            </div>
+            <div class="col-md-6">
+              <p class="card-text" style="color:white;background-color:black"><b>Bio: {{gitUsers.bio}}</b></p>
+              <p class="card-text" style="color:white;background-color:black"><b>Location: {{gitUsers.location}}</b></p>
+              <p class="card-text" style="color:white;background-color:black"><b>Repository Numbers: {{gitUsers.public_repos}}</b></p>
+              <p class="card-text" style="color:white;background-color:black"><b>Followers: {{gitUsers.followers}}</b></p>
+              <p class="card-text" style="color:white;background-color:black"><b>Account created on: {{gitUsers.created_at|date|uppercase}}</b></p>  
+              <p class="card-text" style="color:white;background-color:black"><b>Created {{gitUsers.created_at|date|dateCount}} days ago</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <h2>Git Repositories</h2>
+      
+        <div *ngIf='repositories'>
+        <div class="card-columns">
+        
+          <div appHover *ngFor='let repository of repositories'>
+            <div  class="card text bg-dark mb-3">
+            <div class="card-header"style="color:gold">{{repository.name}}</div>  
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Description</h5>
+                    <p>{{repository.description}}</p>
+                    <a href="{{repository.html_url}}" target="_blank" class="btn btn-outline-success btn-sm">View Repo Site on
+                        github</a>
+                    
+                  </div>
+                </div>         
+                <div class="col-md-6" >
+                  <p>Created on: {{repository.created_at|date|uppercase}}</p>
+                  <p>Updated On: {{repository.updated_at|date|uppercase}}</p>
+                  <p>Pushed On: {{repository.pushed_at|date|uppercase}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+  
+    </div>
+  </div>   -->
