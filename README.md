@@ -1,6 +1,6 @@
 # Gitsearch
 ## Description
-Gitsearch is a website where users enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories.
+Gitsearch is a website where users key in a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories.
 ## Setup instruction
  * open your mobile data and go to your browser
  * open github and git clone my repository 
