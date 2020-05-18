@@ -19,7 +19,7 @@ export class GitHttpService {
     console.log();
     this.user = new User("", "", "", "", "", 0, 0, 0, 0);
     this.repos = new Repos('', '', '', new Date(), new Date(), '');
-    this.username = 'shizukane'
+    this.username = 'shizucane'
   }
 
 
