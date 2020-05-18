@@ -6,7 +6,7 @@ Gitsearch is a website where users enter a GitHub username into a form, submit i
  * open github and git clone my repository 
  * send a pull request
  ## project link
- https://habibahassan.github.io/Gitsearch/.
+ https://shizukane.github.io/gitweb/
  ## Author and acknowledgement
 By Habiba Hassan
 ## Code Beat
