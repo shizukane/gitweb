@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+}
+export class GitHttpService {
+  
+  username:string;
+  apiUrl:'https://api.github.com/users/'
+  client_id = '4ab04b8d16fb7f3f4b4e94e00113090419fcb3be'
+  client_secret = '4ab04b8d16fb7f3f4b4e94e00113090419fcb3be'
 };
 
 /*

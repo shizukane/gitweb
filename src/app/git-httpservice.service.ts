@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import 'rxjs/add/operator/map';
 import { User } from './user';
 import { Repos } from './repo';
 
@@ -13,8 +12,8 @@ export class GitHttpService {
 
 
   username: string;
-  client_id = '5b9b9759cc8b0d8c106e';
-  client_secret = 'fa73efb1deb0eed34d9f0996dca5d3b3b50d4169';
+  client_id = '4ab04b8d16fb7f3f4b4e94e00113090419fcb3be';
+  client_secret = '4ab04b8d16fb7f3f4b4e94e00113090419fcb3be';
 
   constructor(private http: HttpClient) {
     console.log();
@@ -98,12 +97,12 @@ export class GitHttpService {
 }
 
 //   private username:string;
-//   private client_id = '5b9b9759cc8b0d8c106e'
-//   private client_secret = 'fa73efb1deb0eed34d9f0996dca5d3b3b50d4169'
+//   private client_id = '4ab04b8d16fb7f3f4b4e94e00113090419fcb3be'
+//   private client_secret = '4ab04b8d16fb7f3f4b4e94e00113090419fcb3be'
 
 //   constructor(private http:HttpClient){
 //     console.log("service is always ready!");
-//     this.username = 'habibahassan';
+//     this.username = 'shizukane';
 //   }
 
 //   getgitsearchInfo(){
